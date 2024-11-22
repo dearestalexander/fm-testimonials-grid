@@ -1,0 +1,319 @@
+/*=================*/
+/*----Variables----*/
+/*=================*/
+:root {
+  /* testimonials cards */
+  --colour-bg: hsl(210, 46%, 95%); /* light-grayish-blue */
+  --card-one-bg: hsl(263, 55%, 52%); /* moderate violet */
+  --card-one-quotes-bg: #A775F1; /*set as background image? */
+  --card-two-bg: hsl(217, 19%, 35%); /* very dark grayish blue */
+  --card-three-bg: hsl(0, 0%, 100%); /* white */
+  --card-four-bg: hsl(219, 29%, 14%); /* very-dark-blackish-blue */
+  --card-five-bg: hsl(0, 0%, 100%); /* white */
+  --colour-text: hsl(0, 0%, 81%); /* color-light-gray */
+  --colour-text-heading: hsl(0, 0%, 100%); /* white */
+  --card-one-headshot-border: #A775F1;
+  --card-four-headshot-border: #733FC8;
+
+
+  /* testimonials font (base for 'body' plus differences) */
+  --base-font-size: 0.8125rem;
+  --base-font-weight: medium;
+  --base-line-height: 1.125rem;
+  --base-letter-spacing: 0px;
+  --base-colour: hsl(0, 0%, 100%); /* white */
+  --heading-font-size: 1.25rem;
+  --heading-font-weight: 600;
+  --heading-line-height: 1.5rem;
+  --name-line-height: 0.8125rem;
+  --role-font-size: 0.6875rem;
+  --role-line-height: 0.6875rem;
+  --card-one-paragraph: hsl(0, 0%, 81%);
+  --card-three-text: hsl(217, 19%, 35%);
+  --card-four-heading: hsl(210, 46%, 95%);
+  --card-five-text: hsl(217, 19%, 35%)
+}
+
+
+/*=============*/
+/*----Reset----*/
+/*=============*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+/*==============*/
+/*----Global----*/
+/*==============*/
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 255px 255px 255px 255px;
+  gap: 30px;
+  margin: auto;
+}
+
+.item {
+  padding: 1.5rem 2rem 2rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.item__one {
+  grid-column: 1 / 3;
+}
+
+.item__four {
+  grid-column: 2 / 4;
+}
+
+.item__five {
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+}
+
+
+/*=========================*/
+/*----Testimonials page----*/
+/*=========================*/
+.body__testimonial {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: var(--base-font-weight);
+  line-height: var(--base-line-height);
+  background-color: var(--colour-bg);
+  color: var(--base-colour);
+}
+
+.image-role-name {
+  display: grid;
+  grid-template-columns: 1.75rem auto;
+  gap: 1.0625rem;
+}
+
+.headshot {
+  border-radius: 50%;
+}
+
+.name {
+  line-height: var(--name-line-height);
+  margin-bottom: 0.25rem;
+}
+
+.role {
+  font-size: var(--role-font-size);
+  line-height: var(--role-line-height);
+}
+
+.quote-heading {
+  margin-top: 1.125rem;
+  margin-bottom: 1rem;
+  font-size: var(--heading-font-size);
+  font-weight: var(--heading-font-weight);
+  line-height: var(--heading-line-height);
+}
+
+.item__testimonial__one {
+  background-color: var(--card-one-bg);
+  background-image: url('images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position-x: 65%;
+}
+
+.item__testimonial__one .quote-body {
+  color: var(--card-one-paragraph);
+}
+
+.item__testimonial__one .headshot {
+  border: 2px solid var(--card-one-headshot-border);
+}
+
+.item__testimonial__two {
+  background-color: var(--card-two-bg);
+}
+.item__testimonial__three {
+  background-color: var(--card-three-bg);
+  color: var(--card-three-text);
+}
+.item__testimonial__four {
+  background-color: var(--card-four-bg);
+}
+.item__testimonial__four .quote-heading {
+  color: var(--card-four-heading);
+}
+.item__testimonial__four .headshot {
+  border: 2px solid var(--card-four-headshot-border);
+}
+.item__testimonial__five {
+  background-color: var(--card-five-bg);
+  color: var(--card-five-text);
+}
+
+
+/*================*/
+/*----Yamanote----*/
+/*================*/
+.body--yamanote {
+  background-image: url('images/yamanote/background.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+
+.item__yamanote h1 {
+  font-size: 1.5rem;
+}
+
+.item__yamanote p {
+  margin: 1rem auto;
+
+}
+
+.item__yamanote__one,
+.item__yamanote__two,
+.item__yamanote__three,
+.item__yamanote__four,
+.item__yamanote__five {
+  background-color: white;
+  opacity: 95%;
+}
+
+.item__yamanote__one {
+  background-color: #008803;
+  color: white;
+  background-image: url('images/yamanote/tab_train_icon_off_60.svg');
+  background-repeat: no-repeat;
+  background-size: 4rem;
+  background-position-x: 90%;
+}
+
+.item__yamanote__three {
+  background-color: rgb(51, 51, 51);
+  color: white;
+}
+
+.item__yamanote__three img,
+.item__yamanote__three h1 {
+  display: inline-block;
+}
+
+.item__yamanote__four {
+  padding: 0;
+  background-color: #F1F8F1;
+  border: 2px solid #B1A996;
+  display: flex;
+}
+
+.item__yamanote__four a {
+  margin: auto;
+}
+
+.item__yamanote__five {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  padding: 0;
+}
+
+.item__yamanote__five a {
+  color: white;
+}
+
+.item__yamanote__five ul {
+  margin:0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.item__yamanote__five div {
+  padding: 1.5rem 2rem 2rem 2rem;
+  max-width: 
+}
+
+.yamanote__image-train {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+
+/*===================*/
+/*----Attribution----*/
+/*===================*/
+
+
+.attribution {
+  margin-top: auto;
+  font-size: 14px; 
+  text-align: center; 
+  color: black; 
+}
+  
+.attribution a {
+  color: black;
+}
+
+
+@media (max-width: 75rem) {
+
+  .grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 1.5rem;
+    margin-top: 4.4375rem;
+    margin-bottom: 4.4375rem;
+  }
+  
+  .item {
+    width: 87%;
+    grid-column: 1 / -1;
+    grid-row: auto;
+    margin: auto;
+  }
+
+  .item__yamanote__five {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .item__yamanote__five img {
+    margin: auto;
+  }
+
+} 
