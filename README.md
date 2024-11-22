@@ -22,9 +22,8 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### The challenge
 
-Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
+I completed the standard design in on HTML document it's [testimonials.html](testimonial.html)
+And a second 'Yamanote line' inspired alternative design [index.html](index.html)
 
 ### Screenshot
 
@@ -35,10 +34,19 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://dearestalexander.github.io/fm-four-card/)
-- Live Site URL: [Github Pages](https://github.com/dearestalexander/fm-four-card)
+- Solution URL: [Github Repo](https://dearestalexander.github.io/fm-testimonials-grid/)
+- Live Site URL: [Github Pages](https://github.com/dearestalexander/fm-testimonials-grid)
 
 ## My process
+
+As we progress through the challenges I'm starting to follow a more natural workflow.
+
+1. Set up my basic HTML and CSS docs (variables based on styles guide, reset, google fonts etc.)
+2. Build out the basic semantic structure in HTML
+3. Start building CSS
+    - Start by building global styling, layout and styles that would be independent of content inside the blocks
+    - Build the design for the testimonials page
+    - Build the design for my alternate Yamanote page
 
 ### Built with
 
@@ -46,60 +54,31 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Thankfully the linked training materials in the previous exercise on grid were quite good so I found it quite straightforward to create this layout.
 
-To see how you can add code snippets, see below:
+I spent a little time creating a custom .svg background for my alternate design. I did this in figma. I had to do some reading up on how screen resolutions and sizes work for different devices. It turns out to be not that straightforward to estimate window sizes based on device sizes. But I found some useful online tools.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I also discovered you can't adjust opacity for background images. But there are a couple of alternate ways to get a desired effect.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I'm getting more comfortable with these kind of 'macro layouts', I'm interested in future to see how much we can use layouts inside elements.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+In this exercise I did use 'grid' again inside the cards to align the 'headshot' profile images and text. I choose grid just to practice more and see if it had any unusual impacts on the outer grid. One learning I had was using grid just for small alignment like this is also very easy and simple.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Alexander Roan](https://www.alexroan.com)
+- Frontend Mentor - [@dearestalexander](https://www.frontendmentor.io/profile/dearestalexander)
+- Twitter - [@xander_roan](https://x.com/xander_roan)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Thanks to everyone !
