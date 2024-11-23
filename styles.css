@@ -309,12 +309,17 @@ footer {
 /*===================*/
 /*----Attribution----*/
 /*===================*/
+footer {
+  width: 100%;
+  margin-top: 2rem;
+}
+
 .attribution {
-  margin-top: auto;
-  margin-bottom: 1rem;
-  font-size: 14px; 
-  text-align: center; 
-  color: black; 
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  color: black;
 }
 
 .attribution-yamanote {
